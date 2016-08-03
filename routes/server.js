@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app=express();
 
-var servers = app.listen(3000, function () {
+var servers = app.listen(3000, 'localhost', function () {
 
   var host = servers.address().address
   var port = servers.address().port
